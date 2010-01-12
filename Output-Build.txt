@@ -1,0 +1,14 @@
+------ Build started: Project: waveInFFT, Configuration: Debug Win32 ------
+
+Compiling...
+AppTools.cpp
+e:\My Works\ROBOCUP 2006\THEONE\Main Project\waveInFFT_demo\AppTools.cpp(28) : warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+
+waveInFFT - 0 error(s), 1 warning(s)
+
+
+---------------------- Done ----------------------
+
+    Build: 1 succeeded, 0 failed, 0 skipped
+
+

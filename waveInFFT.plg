@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: waveInFFT - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/waveInFFT.res" /d "_DEBUG" /d "_AFXDLL" "D:\Documents and Settings\Nader1\Desktop\waveInFFT_demo\waveInFFT.rc"" 
+Creating temporary file "D:\DOCUME~1\Nader1\LOCALS~1\Temp\RSP122.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/waveInFFT.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Documents and Settings\Nader1\Desktop\waveInFFT_demo\waveInFFT.cpp"
+"D:\Documents and Settings\Nader1\Desktop\waveInFFT_demo\waveInFFTDlg.cpp"
+"D:\Documents and Settings\Nader1\Desktop\waveInFFT_demo\MyTabs.cpp"
+"D:\Documents and Settings\Nader1\Desktop\waveInFFT_demo\TabPageOne.cpp"
+"D:\Documents and Settings\Nader1\Desktop\waveInFFT_demo\TabPageTwo.cpp"
+]
+Creating command line "cl.exe @D:\DOCUME~1\Nader1\LOCALS~1\Temp\RSP122.tmp" 
+Creating temporary file "D:\DOCUME~1\Nader1\LOCALS~1\Temp\RSP123.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/waveInFFT.pdb" /debug /machine:I386 /out:"Debug/waveInFFT.exe" /pdbtype:sept 
+".\Debug\Fourier.obj"
+".\Debug\Recorder.obj"
+".\Debug\SpectrumGraph.obj"
+".\Debug\StdAfx.obj"
+".\Debug\waveInFFT.obj"
+".\Debug\waveInFFTDlg.obj"
+".\Debug\waveInFFT.res"
+".\Debug\MyTabs.obj"
+".\Debug\TabPageOne.obj"
+".\Debug\TabPageTwo.obj"
+]
+Creating command line "link.exe @D:\DOCUME~1\Nader1\LOCALS~1\Temp\RSP123.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+waveInFFT.cpp
+d:\documents and settings\nader1\desktop\waveinfft_demo\waveinfft.cpp(4) : fatal error C1853: 'Debug/waveInFFT.pch' is not a precompiled header file created with this compiler
+waveInFFTDlg.cpp
+d:\documents and settings\nader1\desktop\waveinfft_demo\waveinfftdlg.cpp(4) : fatal error C1853: 'Debug/waveInFFT.pch' is not a precompiled header file created with this compiler
+MyTabs.cpp
+d:\documents and settings\nader1\desktop\waveinfft_demo\mytabs.cpp(4) : fatal error C1853: 'Debug/waveInFFT.pch' is not a precompiled header file created with this compiler
+TabPageOne.cpp
+d:\documents and settings\nader1\desktop\waveinfft_demo\tabpageone.cpp(4) : fatal error C1853: 'Debug/waveInFFT.pch' is not a precompiled header file created with this compiler
+TabPageTwo.cpp
+d:\documents and settings\nader1\desktop\waveinfft_demo\tabpagetwo.cpp(4) : fatal error C1853: 'Debug/waveInFFT.pch' is not a precompiled header file created with this compiler
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+waveInFFT.exe - 5 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

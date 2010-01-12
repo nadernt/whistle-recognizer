@@ -1,0 +1,416 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\waveInFFT.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\waveInFFT.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About waveInFFT"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "waveInFFT Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2004",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_WAVEINFFT_DIALOG DIALOGEX 0, 0, 455, 322
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Learne In Noise"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,343,186,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,290,186,50,14
+    CONTROL         "",IDC_FrmScope,"Static",SS_BLACKRECT | SS_RIGHTJUST,7,6,
+                    218,135,WS_EX_DLGMODALFRAME
+    CONTROL         "Preview ON",IDC_OSCCheck,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,14,192,50,15
+    CONTROL         "",IDC_PicShowBox,"Static",SS_ETCHEDFRAME | SS_RIGHTJUST | 
+                    SS_REALSIZEIMAGE,231,6,217,135,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Button1",IDC_BUTTON1,101,194,62,13
+    CONTROL         "",IDC_TAB2,"SysTabControl32",0x0,7,150,441,165
+END
+
+IDD_DLG1 DIALOGEX 0, 0, 431, 147
+STYLE DS_SETFONT | DS_CONTROL | WS_POPUP
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Select Source",IDC_SourceSel,9,62,54,20,BS_FLAT | 
+                    WS_GROUP
+    PUSHBUTTON      "New",IDC_New,9,38,54,20,BS_FLAT
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",0x5,165,28,16,101
+    CONTROL         "Mointor ON",IDC_PeakMon,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,77,38,54,20
+    CTEXT           "Static",IDC_txtPeak,150,132,30,8
+    CTEXT           "Weak",IDC_txtLog,17,14,107,9
+    CONTROL         "Hot Peak ON",IDC_PeakMon2,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,77,62,54,20
+    CONTROL         "",IDC_PROGRESS2,"msctls_progress32",0x5,149,28,16,101
+    CONTROL         "",IDC_PeakHot,"Static",SS_BLACKFRAME | WS_BORDER,149,6,
+                    32,23,WS_EX_DLGMODALFRAME | WS_EX_STATICEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,10,32,123,1
+    CONTROL         156,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE | 
+                    WS_BORDER,12,90,48,46
+    CONTROL         "",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,198,24,29,98
+    CONTROL         "",IDC_SLIDER2,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,231,24,28,98
+    CONTROL         "",IDC_SLIDER3,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,264,24,26,97
+    CONTROL         "",IDC_SLIDER4,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,395,24,25,97
+    CONTROL         "",IDC_SLIDER5,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,307,24,25,97
+    CONTROL         "",IDC_SLIDER6,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,336,24,25,97
+    CONTROL         "",IDC_SLIDER7,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | TBS_BOTH | WS_TABSTOP,365,24,25,97
+    GROUPBOX        "Recording",IDC_STATIC,194,4,101,135,BS_FLAT
+    GROUPBOX        "Volume",IDC_STATIC,306,4,119,135,BS_FLAT
+    CONTROL         "",1034,"Button",BS_AUTORADIOBUTTON | BS_PUSHLIKE,202,
+                    122,19,12
+    CONTROL         "",IDC_RADIOOUTMIX,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,234,122,19,12
+    CONTROL         "",IDC_RADIOMIC,"Button",BS_AUTORADIOBUTTON | 
+                    BS_PUSHLIKE,268,122,19,12
+    CONTROL         "",IDC_ChkSp,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    WS_TABSTOP,311,122,20,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,139,8,2,130
+    CTEXT           "Line In",IDC_STATIC,200,15,22,8,0,WS_EX_TRANSPARENT
+    CTEXT           "Out Mix",IDC_STATIC,232,15,25,8,0,WS_EX_TRANSPARENT
+    CTEXT           "Mic",IDC_STATIC,271,15,14,8,0,WS_EX_TRANSPARENT
+    CTEXT           "Speaker",IDC_STATIC,307,15,28,8,0,WS_EX_TRANSPARENT
+    CTEXT           "Wave",IDC_STATIC,340,15,20,8,0,WS_EX_TRANSPARENT
+    CTEXT           "Mic",IDC_STATIC,372,16,12,8,0,WS_EX_TRANSPARENT
+    CTEXT           "Line In",IDC_STATIC,395,16,22,8,0,WS_EX_TRANSPARENT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,228,28,2,97
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,261,28,2,97
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,335,29,1,91
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,364,29,1,93
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,393,29,1,94
+    CONTROL         "",IDC_ChkWav,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    WS_TABSTOP,340,122,20,12
+    CONTROL         "",IDC_ChkMic,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    WS_TABSTOP,369,122,20,12
+    CONTROL         "",IDC_ChkLine,"Button",BS_AUTOCHECKBOX | BS_PUSHLIKE | 
+                    WS_TABSTOP,399,122,20,12
+    CONTROL         "Area Monitor OFF",IDC_PeakMon3,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_MULTILINE | BS_FLAT | WS_TABSTOP,77,86,
+                    54,20
+    EDITTEXT        IDC_EDIT2,97,126,33,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_HOTTRACK,85,125,13,17
+    GROUPBOX        "Record Status",IDC_STATIC,9,4,124,23
+    GROUPBOX        "",IDC_STATIC,149,126,32,18
+    EDITTEXT        IDC_EDIT3,97,109,33,14,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_SPIN4,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_HOTTRACK,85,108,11,17
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,69,40,1,100
+    CTEXT           "Rec Sense",IDC_STATIC,71,109,26,17,0,WS_EX_TRANSPARENT
+    CTEXT           "Area TR",IDC_STATIC,74,126,19,18,0,WS_EX_TRANSPARENT
+END
+
+IDD_DLG2 DIALOGEX 0, 0, 403, 139
+STYLE DS_SETFONT | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Wave Concatenate Wizard",IDC_WavCat,8,11,85,21,
+                    BS_MULTILINE | BS_FLAT
+    CONTROL         "Play sample sounds in process time",IDC_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,10,41,77,19
+    GROUPBOX        "",IDC_STATIC,7,33,85,33
+    PUSHBUTTON      "Playe Sample File",IDC_PlaySamplBtn,7,72,85,21,
+                    BS_MULTILINE | BS_FLAT
+    CONTROL         "Play final sample sounds after process",IDC_CHECK2,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,10,
+                    103,81,19
+    GROUPBOX        "",IDC_STATIC,7,95,85,33
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,99,11,1,117
+    CONTROL         "Preview ON",IDC_OSCCheck,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | WS_TABSTOP,106,11,85,21
+    PUSHBUTTON      "Learn And Listen !",IDC_btnLearnListen,106,38,85,21,
+                    BS_MULTILINE | BS_FLAT
+    EDITTEXT        IDC_txtCutOff,140,72,41,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_SPINCutOff,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_HOTTRACK,135,71,11,17
+    CTEXT           "Cut Off Filter",IDC_STATIC,108,71,26,17,0,
+                    WS_EX_TRANSPARENT
+    GROUPBOX        "",IDC_STATIC,106,62,85,33
+    CONTROL         "Synapse Weghit Show ON",IDC_SynaShow,"Button",
+                    BS_AUTOCHECKBOX | BS_PUSHLIKE | BS_MULTILINE | BS_FLAT | 
+                    WS_TABSTOP,106,102,85,21
+    EDITTEXT        IDC_EDIT5,211,29,69,11,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,204,8,84,40
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,197,11,1,116
+    LTEXT           "Recognized Whistle",IDC_STATIC,213,16,66,8
+    CTEXT           "Short",IDC_LbShort,210,64,71,16,SS_CENTERIMAGE | 
+                    WS_BORDER
+    GROUPBOX        "",IDC_STATIC,204,47,84,39
+    CTEXT           "Long",IDC_LbShort2,210,101,71,16,SS_CENTERIMAGE | 
+                    WS_BORDER
+    GROUPBOX        "",IDC_STATIC,204,84,84,38
+    CTEXT           "Short",IDC_STATIC,231,54,29,10,0,WS_EX_TRANSPARENT
+    CTEXT           "Long",IDC_STATIC,231,91,29,9,0,WS_EX_TRANSPARENT
+    CONTROL         "Play Noise",IDC_OSCCheck3,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | BS_FLAT | NOT WS_VISIBLE | WS_TABSTOP,298,
+                    14,85,21
+    PUSHBUTTON      "Stop",IDC_btnLearnListen2,298,41,85,21,BS_MULTILINE | 
+                    BS_FLAT | NOT WS_VISIBLE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,292,12,1,115
+    CONTROL         157,IDC_STATIC,"Static",SS_BITMAP | NOT WS_VISIBLE,303,
+                    67,77,56
+END
+
+IDD_DLG3 DIALOGEX 0, 0, 432, 165
+STYLE DS_SETFONT | WS_POPUP
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Preview ON",IDC_Prew,"Button",BS_AUTOCHECKBOX | 
+                    BS_PUSHLIKE | WS_TABSTOP,18,17,50,15
+END
+
+IDD_DlgSetting DIALOGEX 0, 0, 190, 50
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "Source Selector"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,8,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,27,50,14
+    LTEXT           "Plaese enter number of Mici sources!",IDC_STATIC,52,14,
+                    75,18
+    EDITTEXT        IDC_EDIT1,11,16,34,15,ES_CENTER | ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNLEFT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_HOTTRACK,7,7,11,26
+    GROUPBOX        "",IDC_STATIC,7,3,176,40
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "waveInFFT MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "waveInFFT"
+            VALUE "LegalCopyright", "Copyright (C) 2004"
+            VALUE "OriginalFilename", "waveInFFT.EXE"
+            VALUE "ProductName", "waveInFFT Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_WAVEINFFT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 448
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 315
+    END
+
+    IDD_DLG1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 430
+        HORZGUIDE, 27
+        HORZGUIDE, 129
+    END
+
+    IDD_DLG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 396
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_DLG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 425
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_DlgSetting, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "waveInFFT.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP2             BITMAP                  "TempFiles\\Arm.bmp"
+IDB_BITMAP3             BITMAP                  "side1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About waveInFFT..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\waveInFFT.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
